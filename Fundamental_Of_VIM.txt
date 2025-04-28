@@ -1,0 +1,114 @@
+
+vim filename.cpp // to create a cpp file in cmd
+i- for get access on the editing portal and code in the cmd
+esc // is for exit from editing
+:w // is for saving the file 
+:q // for quiet the editing
+:wq // is for save and quiet
+
+now in commad promt
+
+
+g++ -std=c++17 filename.cpp // for creating a executable file and it will create a executable file as a
+
+./a.exe // is for running the executable file
+
+g++ -std=c++17 filename.cpp -o filenamecode // creating a instance for the filename.cpp
+
+./filenamecode // is for running the file and it will give same result as executable file "a".
+
+You're reading a big .cpp file in Vim —
+➔ Press Ctrl + b
+➔ Vim will move one page upward (scroll up by one full screen).
+
+Similarly,
+➔ Press Ctrl + f
+➔ Vim will move one page downward (scroll down).
+
+
+vim filename.cpp // is also for the creating the file ,opening the file and many more.
+
+
+
+:wq! // is for forcefully edit the code if you mistally edit the code and  not able to save in the termial using the vim.
+
+cls → CLear Screen.
+
+
+:set number  // To show line numbers temporarily (for now):
+
+open the setting file in the vim
+vim $HOME/_vimrc    // If you are on Windows CMD (most likely)
+
+
+
+If $HOME/_vimrc file doesn't exist yet?
+
+set number
+set relativenumber
+set tabstop=4
+set shiftwidth=4
+syntax on
+
+
+dir // find the list on the file
+
+
+🔥 In Vim, here’s how you actually Copy and Paste:
+1. Copy inside vim:
+Go to normal mode (Press Esc key first)
+
+Select text:
+
+Press v to start visual mode.
+
+Move cursor (←, →, ↑, ↓) to select text.
+
+After selecting:
+
+Press y → (stands for "yank" = copy)
+
+✅ Now the text is copied inside vim.
+
+2. Paste inside vim:
+Go to the place where you want to paste.
+
+Press p → (stands for "put" = paste after cursor)
+
+✅ Your copied text will be pasted.
+
+🔥 Simple Vim Commands Summary:
+
+Action	Vim Command
+Copy (Yank) line	yy
+Copy (Yank) selection	v → move → y
+Paste after cursor	p
+Paste before cursor	P
+⚡ Bonus (Copy-Paste between system clipboard and vim):
+If you want to copy from vim to your Windows clipboard (outside vim),
+you need to use "+y instead of y:
+
+Select text (v and move arrows)
+
+Press "+y to copy to Windows clipboard.
+
+✅ Then you can paste outside vim (like into Notepad).
+
+Similarly, to paste system clipboard into vim:
+
+In normal mode, type: "+p
+
+📢 Important:
+"+y and "+p work only if vim supports clipboard (+clipboard feature).
+
+In Windows Terminal + WSL, you usually need vim-gtk or neovim for full clipboard support.
+
+🎯 In simple words for you:
+
+Goal	How to do it
+Copy inside vim	v → move → y
+Paste inside vim	p
+Copy from vim to Windows clipboard	v → move → "+y
+Paste from Windows clipboard into vim	"+p
+Would you like me to also give you a small cheat sheet for all common vim copy/paste/move commands? 📝 (Very useful if you're starting with vim.)
+Just say! 🚀
